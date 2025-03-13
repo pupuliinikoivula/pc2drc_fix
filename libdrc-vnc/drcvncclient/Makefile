@@ -295,7 +295,7 @@ top_build_prefix =
 top_builddir = .
 top_srcdir = .
 x264_CFLAGS = -I/usr/local/include
-x264_LIBS = -L/usr/local/lib -lx264 -L/usr/local/lib -lswscale
+x264_LIBS = -L/usr/local/lib -lx264 -L/usr/local/lib -lswscale -ldl -lpthread
 SUBDIRS = src
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
